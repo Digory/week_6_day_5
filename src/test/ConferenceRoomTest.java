@@ -32,6 +32,13 @@ public class ConferenceRoomTest {
     }
 
     @Test
+    public void getDescription(){
+        assertEquals("Ricardo's lorry-themed room", seeds.ricardoRoom.getDescription());
+        assertEquals("Kirstin's happiness and rainbows room", seeds.kirstinRoom.getDescription());
+        assertEquals("Fashion room plus glitterbomb", seeds.gemmaRoom.getDescription());
+    }
+
+    @Test
     public void getRoomType(){
         assertEquals(ConferenceRoomType.RICARDO_ROOM, seeds.ricardoRoom.getType());
         assertEquals(ConferenceRoomType.KIRSTIN_ROOM, seeds.kirstinRoom.getType());
